@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    </head>
+    <body>
+        <!--
+        Exercises from http://www.w3schools.com/angular/angular_intro.asp
+        -->
+        <div ng-app="">
+
+            <p>Name using ng-model with input type text: <input type="text" ng-model="name"></p>
+            <p ng-bind="name"></p>
+            <p>Also with expressions! {{name}}</p>
+            <!--
+            The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+            The ng-model directive binds the value of the input field to the application variable name.
+            The ng-bind directive binds the innerHTML of the <p> element to the application variable name.
+           -->
+
+            <br>
+            <br>
+
+            <div ng-init="firstName='John'">
+                <p>The name is <span ng-bind="firstName"></span></p>
+                <p>Name is also {{firstName}} using expressions with double braces <span ng-non-bindable>{{firstName}}</span>!</p>
+                <p>Double braces also evaluates expressions like <span ng-non-bindable>{{5+5}}</span>, which equals {{5+5}}</p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </body>
+
+</html>
