@@ -1,0 +1,21 @@
+my-app > h1 {
+    font-size:10px;
+}
+
+#image_container {
+    width : "100%";
+}
+/*
+    "my-image > div" means direct children only
+    "my-image div" means all descedants
+*/
+
+#image_image {
+    position: relative;
+    left: 50%;
+    transform :translate(-50%, 0);
+}
+
+#image_description {
+    text-align: center;
+}
